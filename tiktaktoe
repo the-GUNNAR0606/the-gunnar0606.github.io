@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <title>
+            Tik Tak Toe-like
+        </title>
+    </head>
+    <body>
+        <style>
+            *{
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <h1>TTT-like</h1>
+    </body>
+</html>
