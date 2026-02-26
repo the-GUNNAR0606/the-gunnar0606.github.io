@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>To-Do List</title>
+</head>
+<body>
+
+
+   <h1>the list of to-ing and do-ing</h1>
+   <input type="text" id="Oreo" placeholder="Enter a new task...">
+   <button class="addButton" onclick="addTask()">+</button>
+   <ul id="taskList"></ul>
+  
+   <script>
+
+
+       function addTask() {
+           // get the current value of taskInput
+            let taskInput = document.getElementById("Oreo")
+            let task = taskInput.value 
+
+
+            
+            
+            // create a list item (li)
+            let li = document.createElement ("li")
+           // create a span
+           let span = document.createElement ("span")
+           span.innerText = task
+           // create a checkbox (input type="checkbox")
+            let cb = document.createElement ("input")
+            cb.type = "checkbox"
+
+           // add the span to the list item
+            li.appendChild (span) 
+           // add the checkbox to the list item
+            li.appendChild (cb)
+
+           // add behavior to the checkbox onchange callback
+           // add behavior to the span onclick callback
+
+
+           // add the list item to the taskList
+           let tasklist = document.getElementById ("taskList")
+           tasklist.appendChild (li)
+
+
+
+
+           console.log("add a task!")
+       }
+
+
+   </script>
+</body>
+</html>
